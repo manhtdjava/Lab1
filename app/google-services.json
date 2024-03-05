@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "227430740982",
+    "project_id": "restfullapi-b7ad1",
+    "storage_bucket": "restfullapi-b7ad1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:227430740982:android:3000bb2886cf0caf02cdd7",
+        "android_client_info": {
+          "package_name": "com.example.lab1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLJzVPDFklTJk1WX0Yqp6O5mgQxZWfS4I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
