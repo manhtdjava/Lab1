@@ -22,7 +22,7 @@
             android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Thêm Loại Sách"
+            android:text="Thêm Sản phẩm"
             android:textColor="@color/levente"
             android:textStyle="bold"
             android:textSize="30sp"
@@ -42,20 +42,34 @@
             android:textColorHint="@color/white"
             android:background="@drawable/edt_custom"
             />
+        <EditText
+            android:layout_marginTop="10dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:ems="10"
+            android:hint="Nhập tên loại sách"
+            android:inputType="text"
+            android:paddingLeft="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:background="@drawable/edt_custom"
+            />
+        <EditText
+            android:layout_marginTop="10dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:ems="10"
+            android:hint="Nhập tên loại sách"
+            android:inputType="text"
+            android:paddingLeft="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:background="@drawable/edt_custom"
+            />
 
 
-        <!--        <EditText-->
-        <!--            android:layout_marginTop="10dp"-->
-        <!--            android:id="@+id/edtnxb"-->
-        <!--            android:layout_width="match_parent"-->
-        <!--            android:layout_height="45dp"-->
-        <!--            android:ems="10"-->
-        <!--            android:hint="Nhập nxb sách"-->
-        <!--            android:inputType="text"-->
-        <!--            android:paddingLeft="10dp"-->
-        <!--            android:textColor="@color/white"-->
-        <!--            android:textColorHint="@color/white"-->
-        <!--            android:background="@drawable/edt_custom" />-->
 
 
         <LinearLayout
