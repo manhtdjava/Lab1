@@ -14,6 +14,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.android.material.textfield.TextInputLayout;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -21,8 +22,8 @@ import com.google.firebase.auth.FirebaseUser;
 public class Login extends AppCompatActivity {
     private FirebaseAuth mAuth;
     EditText edtemail, edtpass;
-    TextView txtsignup, txtquen;
-    Button btnlogin;
+    TextView txtquen;
+    Button btnlogin,btnsignup;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,10 +31,10 @@ public class Login extends AppCompatActivity {
        mAuth = FirebaseAuth.getInstance();
        edtemail = findViewById(R.id.edtuser);
        edtpass = findViewById(R.id.edtpass);
-       txtsignup = findViewById(R.id.txtsignup);
        txtquen = findViewById(R.id.txtquen);
+        btnsignup = findViewById(R.id.btnsignup);
        btnlogin = findViewById(R.id.btnlogin);
-       txtsignup.setOnClickListener(new View.OnClickListener() {
+       btnsignup.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View view) {
                Intent intent = new Intent(Login.this, SignUp.class);

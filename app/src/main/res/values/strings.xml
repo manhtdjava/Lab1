@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Lab1</string>
+
+    <string name="open"></string>
+    <string name="close"></string>
+    <string name="foget"><u>Forgot password?</u></string>
 </resources>

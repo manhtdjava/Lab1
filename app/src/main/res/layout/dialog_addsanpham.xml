@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@drawable/gray_backgroud"
+        android:elevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thêm Loại Sách"
+            android:textColor="@color/levente"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:gravity="center"
+            />
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:id="@+id/edttenLoaiSach"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:ems="10"
+            android:hint="Nhập tên loại sách"
+            android:inputType="text"
+            android:paddingLeft="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:background="@drawable/edt_custom"
+            />
+
+
+        <!--        <EditText-->
+        <!--            android:layout_marginTop="10dp"-->
+        <!--            android:id="@+id/edtnxb"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="45dp"-->
+        <!--            android:ems="10"-->
+        <!--            android:hint="Nhập nxb sách"-->
+        <!--            android:inputType="text"-->
+        <!--            android:paddingLeft="10dp"-->
+        <!--            android:textColor="@color/white"-->
+        <!--            android:textColorHint="@color/white"-->
+        <!--            android:background="@drawable/edt_custom" />-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:layout_marginTop="10dp"
+                android:id="@+id/btncanaddLoaiSach"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CanCel"
+                android:background="@drawable/btn_custom"
+                android:textSize="24sp"
+                android:layout_marginRight="5dp"
+                android:textColor="@color/white"/>
+            <Button
+                android:layout_marginTop="10dp"
+                android:id="@+id/btnsubmitaddLoaiSach"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="submit"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/btn_custom"
+                android:textSize="24sp"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
