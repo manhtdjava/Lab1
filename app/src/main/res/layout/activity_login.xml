@@ -30,23 +30,31 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
-    <EditText
-        android:id="@+id/edtuser"
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:id="@+id/textInputLayout1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="30dp"
-        android:ems="10"
-        android:hint="Email"
-        android:textColor="@color/levente"
-        android:drawablePadding="10dp"
-        android:drawableStart="@drawable/email"
-        android:inputType="text"
         android:textColorHint="@color/levente"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:errorTextColor="@color/levente"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <EditText
+            android:id="@+id/edtuser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:drawableStart="@drawable/email"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="text"
+            android:textColor="@color/levente"
+            android:textColorHint="@color/levente" />
+    </com.google.android.material.textfield.TextInputLayout>
 
 
     <com.google.android.material.textfield.TextInputLayout
@@ -56,7 +64,7 @@
         android:layout_height="wrap_content"
         android:textColorHint="@color/levente"
         app:errorTextColor="@color/levente"
-        app:layout_constraintTop_toBottomOf="@+id/edtuser"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout1"
         app:passwordToggleEnabled="true">
 
         <EditText
@@ -99,7 +107,7 @@
             android:layout_marginRight="5dp"
             android:layout_weight="0.5"
             android:background="@drawable/btn_custom"
-            android:text="SignUp"
+            android:text="CANCEL"
             android:textColor="@color/white"
             android:textSize="20sp" />
 
