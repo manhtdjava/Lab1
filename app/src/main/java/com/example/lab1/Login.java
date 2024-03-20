@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -24,6 +25,7 @@ public class Login extends AppCompatActivity {
     EditText edtemail, edtpass;
     TextView txtquen;
     Button btnlogin,btnsignup;
+    ImageButton btnphone;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,6 +36,14 @@ public class Login extends AppCompatActivity {
        txtquen = findViewById(R.id.txtquen);
         btnsignup = findViewById(R.id.btnsignup);
        btnlogin = findViewById(R.id.btnlogin);
+       btnphone = findViewById(R.id.btnPhone);
+
+       btnphone.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View view) {
+               startActivity(new Intent(Login.this, LoginPhone.class));
+           }
+       });
        btnsignup.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View view) {

@@ -6,7 +6,7 @@
     android:orientation="horizontal"
     >
     <androidx.cardview.widget.CardView
-        android:id="@+id/itemTV"
+        android:id="@+id/itemSP"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:cardCornerRadius="20dp"
@@ -19,30 +19,40 @@
             android:padding="15dp"
             >
             <TextView
-                android:id="@+id/txtmaTV"
+                android:id="@+id/txtTen"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Mã tv"
+                android:text="Tên Sản phẩm"
                 android:textSize="18sp"
                 android:textColor="#CC6A6969"
                 />
             <TextView
                 android:layout_marginTop="5dp"
-                android:id="@+id/txttenTV"
+                android:id="@+id/txtGia"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Tên tv: "
-                android:layout_below="@id/txtmaTV"
+                android:text="Giá Sản phẩm: "
+                android:layout_below="@id/txtTen"
                 android:textSize="18sp"
                 android:textColor="@color/black"
                 />
             <TextView
                 android:layout_marginTop="5dp"
-                android:id="@+id/txtnamSinhTV"
+                android:id="@+id/txtSoLuong"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Năm sinh: "
-                android:layout_below="@id/txttenTV"
+                android:text="Số lượng: "
+                android:layout_below="@id/txtGia"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/txtTonKho"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tồn Kho: "
+                android:layout_below="@id/txtSoLuong"
                 android:textSize="18sp"
                 android:textColor="@color/black"
                 />
