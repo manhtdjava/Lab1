@@ -115,16 +115,17 @@ public class MainActivity extends AppCompatActivity {
 
         APIServer apiService = retrofit.create(APIServer.class);
 
-        Call<Void> call = apiService.addSanPham(sanPham);
-
-        call.enqueue(new Callback<Void>() {
+        Call<SanPhamModel> call = apiService.addSanPham(sanPham);
+        call.enqueue(new Callback<SanPhamModel>() {
             @Override
-            public void onResponse(Call<Void> call, Response<Void> response) {
+            public void onResponse(Call<SanPhamModel> call, Response<SanPhamModel> response) {
                 if (response.isSuccessful()) {
                     // Thêm sản phẩm mới vào danh sách và cập nhật RecyclerView (nếu cần)
-                    loaddata();
+
                     if (list != null) {
-                        list.add(sanPham);
+
+
+                        loaddata();
                         adapter.notifyDataSetChanged(); // Cập nhật RecyclerView
                     }
                 } else {
@@ -134,11 +135,11 @@ public class MainActivity extends AppCompatActivity {
             }
 
             @Override
-            public void onFailure(Call<Void> call, Throwable t) {
-                // Xử lý khi gặp lỗi kết nối (ví dụ: hiển thị thông báo lỗi)
-                Log.e("AddProduct", "Error: " + t.getMessage());
+            public void onFailure(Call<SanPhamModel> call, Throwable t) {
+
             }
         });
+
     }
     private void loaddata(){
         LinearLayoutManager layoutManager = new LinearLayoutManager(MainActivity.this);
