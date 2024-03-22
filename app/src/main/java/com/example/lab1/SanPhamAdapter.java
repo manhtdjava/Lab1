@@ -17,11 +17,30 @@ import java.util.List;
 public class SanPhamAdapter extends RecyclerView.Adapter<SanPhamAdapter.SanPhamViewHolder>{
     Context context;
     private List<SanPhamModel> list;
+    public interface OnDeleteClickListener {
+        void onDeleteClick(int pos);
+    }
+    private OnDeleteClickListener onDeleteClickListener;
 
+    public void setOnDeleteClickListener(OnDeleteClickListener listener) {
+        this.onDeleteClickListener = listener;
+    }
+
+    public interface OnUpdateClickListener {
+        void onUpdateClick(int position);
+    }
+
+    private OnUpdateClickListener onUpdateClickListener;
+
+    // Phương thức thiết lập sự kiện cập nhật sản phẩm
+    public void setOnUpdateClickListener(OnUpdateClickListener listener) {
+        this.onUpdateClickListener = listener;
+    }
     public SanPhamAdapter(Context context, List<SanPhamModel> list) {
         this.context = context;
         this.list = list;
     }
+
 
     @NonNull
     @Override
@@ -39,6 +58,24 @@ public class SanPhamAdapter extends RecyclerView.Adapter<SanPhamAdapter.SanPhamV
 
 //        String tt = list.get(position).isTonKho() ? "Còn hàng" : "Hết hàng";
         holder.txtTonKho.setText("Tồn kho: " + list.get(position).getTonkho());
+        holder.imgDelete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (onDeleteClickListener != null){
+                      onDeleteClickListener.onDeleteClick(holder.getAdapterPosition());
+
+                }
+            }
+        });
+
+        holder.itemSanPham.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (onUpdateClickListener != null){
+                    onUpdateClickListener.onUpdateClick(holder.getAdapterPosition());
+                }
+            }
+        });
     }
 
     @Override

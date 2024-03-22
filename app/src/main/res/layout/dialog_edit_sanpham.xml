@@ -22,7 +22,7 @@
             android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Thêm Sản phẩm"
+            android:text="Cập nhật Sản Phẩm"
             android:textColor="@color/levente"
             android:textStyle="bold"
             android:textSize="30sp"
@@ -31,38 +31,54 @@
 
         <EditText
             android:layout_marginTop="10dp"
-            android:id="@+id/edttenLoaiSach"
+            android:id="@+id/edtTenEdit"
             android:layout_width="match_parent"
             android:layout_height="45dp"
             android:ems="10"
-            android:hint="Nhập tên loại sách"
+            android:hint="Nhập tên sản phẩm"
             android:inputType="text"
             android:paddingLeft="10dp"
             android:textColor="@color/white"
             android:textColorHint="@color/white"
             android:background="@drawable/edt_custom"
             />
+
         <EditText
             android:layout_marginTop="10dp"
-
+            android:id="@+id/edtGiaEdit"
             android:layout_width="match_parent"
             android:layout_height="45dp"
             android:ems="10"
-            android:hint="Nhập tên loại sách"
+            android:hint="Nhập giá sản phẩm"
             android:inputType="text"
             android:paddingLeft="10dp"
             android:textColor="@color/white"
             android:textColorHint="@color/white"
             android:background="@drawable/edt_custom"
             />
+
         <EditText
             android:layout_marginTop="10dp"
-
+            android:id="@+id/edtSoLuongEdit"
             android:layout_width="match_parent"
             android:layout_height="45dp"
             android:ems="10"
-            android:hint="Nhập tên loại sách"
+            android:hint="Nhập số lượng sản phẩm"
             android:inputType="text"
+            android:paddingLeft="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:background="@drawable/edt_custom"
+            />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/edtTonKhoEdit"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="Nhập tồn kho"
+            android:textSize="17.5dp"
+            android:gravity="center_vertical"
             android:paddingLeft="10dp"
             android:textColor="@color/white"
             android:textColorHint="@color/white"
@@ -78,7 +94,7 @@
             android:orientation="horizontal">
             <Button
                 android:layout_marginTop="10dp"
-                android:id="@+id/btncanaddLoaiSach"
+                android:id="@+id/btnCanEdit"
                 android:layout_weight="1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -89,7 +105,7 @@
                 android:textColor="@color/white"/>
             <Button
                 android:layout_marginTop="10dp"
-                android:id="@+id/btnsubmitaddLoaiSach"
+                android:id="@+id/btnSubmitEdit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="submit"

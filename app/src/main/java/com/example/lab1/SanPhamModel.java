@@ -14,6 +14,13 @@ public class SanPhamModel {
         this.tonkho = tonKho;
     }
 
+    public SanPhamModel(String ten, int gia, int soluong, String tonkho) {
+        this.ten = ten;
+        this.gia = gia;
+        this.soluong = soluong;
+        this.tonkho = tonkho;
+    }
+
     public SanPhamModel() {
 
     }
